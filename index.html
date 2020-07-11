@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP WATCH</title>
+    <link rel="shortcut icon" type="image/png" href="images/icons8_stopwatch_20px.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-gradient-dark text-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/icons8_stopwatch_60px.png" height="45px" class="d-inline-block align-top"
+                alt="" loading="lazy">
+            STOP WATCH
+        </a>
+    </nav>
+    <div class="col-12 col-xl-9 col-lg-9 col-md-9 col-sm-8 shadow mx-auto big" id="div">
+        <div class="bg-white main shadow text-center py-3 big" id="div">
+            <div class="mx-auto main">
+                <div>
+                    <h2 id="min">0</h2>
+                    <h2 id="sec">00</h2>
+                    <h2 id="msec">00</h2>
+                </div>
+                <div class="btn-group btn-group-md" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-warning ml-2" onclick="start('startBtn','stopBtn')" id="startBtn">Start</button>
+                    <button type="button" class="btn btn-info mx-2" onclick="stop('stopBtn','startBtn')" id="stopBtn">Pause</button>
+                    <button type="button" class="btn btn-success" onclick="reset('startBtn','stopBtn')" id="resetBtn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-gradient-dark text-light py-2 mt-4 fixed-bottom">
+        <div style="font-size: 12px;" class="text-center">
+            Copyright 
+            <i class="fa fa-copyright" aria-hidden="true"></i>
+            Stop Watch
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
